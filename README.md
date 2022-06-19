@@ -1,6 +1,6 @@
 # pytest-trace
 
-Save OpenTelemetry spans generated during testing
+Save [OpenTelemetry](https://opentelemetry.io/) spans generated during testing
 
 ## Install
 
