@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pytest-trace"
-version = "0.1.0"
+version = "1.0.0"
 description = "Save OpenTelemetry spans generated during testing"
 readme = "README.md"
 authors = [{ name = "Scott Nelson", email = "scott@scottnelson.co" }]
@@ -39,7 +39,7 @@ pythonpath = [
 ]
 
 [tool.bumpver]
-current_version = "0.1.0"
+current_version = "1.0.0"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message  = "Bump version {old_version} -> {new_version}"
 commit          = true
