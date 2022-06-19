@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-trace"
+version = "0.1.0"
+description = "Save OpenTelemetry traces generated during testing"
+readme = "README.md"
+authors = [{ name = "Scott Nelson", email = "scott@scottnelson.co" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Framework :: Pytest",
+]
+keywords = ["pytest", "py.test"]
+dependencies = [
+    "pytest>=4.6",
+    "opentelemetry-api>=1.11",
+    "opentelemetry-sdk>=1.11",
+]
+requires-python = ">=3.8"
+
+[project.entry-points."pytest11"]
+pytest_trace = "pytest_trace.plugin"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://github.com/scttnlsn/pytest-trace"
