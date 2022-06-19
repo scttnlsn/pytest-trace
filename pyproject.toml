@@ -31,3 +31,9 @@ dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
 
 [project.urls]
 Homepage = "https://github.com/scttnlsn/pytest-trace"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".",
+  "src",
+]
